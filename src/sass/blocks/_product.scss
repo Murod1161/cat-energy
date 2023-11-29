@@ -1,0 +1,177 @@
+.product {
+  padding: 20px 5vw 24px 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 0;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.product__title {
+  order: 2;
+  text-transform: uppercase;
+  max-width: 80px;
+  line-height: 20px;
+}
+
+.product__picture {
+  display: block;
+  grid-row: span 2;
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.product__details {
+  order: 3;
+  margin: 0;
+}
+
+.product__detail {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 16px;
+
+  dd {
+    margin: 0;
+  }
+}
+
+.product__button {
+  grid-column: span 2;
+  order: 4;
+}
+
+// .product {
+//   padding: 20px 0 24px 0;
+//   border-bottom: 1px solid #EBEBEB;
+  
+//   @include tablet {
+//     background-color: #F2F2F2;
+//     border: none;
+//     padding: 0;
+//     display: grid;
+//     justify-items: center;
+//   }
+// }
+
+// .product__image-wrapper {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 140px;
+//   height: 112px;
+
+//   @include tablet {
+//     width: max-content;
+//   }
+// }
+
+// .product__title {
+//   text-transform: uppercase;
+//   line-height: 20px;
+//   color: #222;
+//   margin: 0;
+
+//   &--extra {
+//     line-height: 16px;
+//   }
+
+//   @include tablet {
+//     font-size: 20px;
+//     line-height: 24px;
+//     padding-top: 30px;
+//     text-align: center;
+//   }
+
+//   @include desktop {
+//     width: 145px;
+//     height: 46px;
+//   }
+// }
+
+// .product__info {
+//   font-family: Arial;
+//   font-size: 12px;
+//   line-height: 16px;
+
+//   dt {
+//     width: 140px;
+//     float: left;
+//     clear: both;
+//     padding: 8px 0;
+//   }
+
+//   dd {
+//     margin: 0 0 0 140px;
+//     padding: 8px 0;
+//     text-align: end;
+//   }
+
+//   &--extra {
+//     font-size: 14px;
+//     line-height: 1;
+
+//     dt {
+//       padding: 0;
+//     }
+
+//     dd {
+//       padding: 0;
+//     }
+//   }
+
+//   @include tablet {
+//     font-size: 16px;
+// 	  overflow: hidden;
+//     margin: 20px 0 0;
+
+//     dt {
+//       width: 195px;
+//       float: left;
+//       clear: both;
+//       padding: 8px 0;
+//       border-bottom: 1px solid #cdcdcd;
+//     }
+
+//     dd {
+//       margin: 0 0 0 195px;
+//       padding: 8px 0;
+//       border-bottom: 1px solid #cdcdcd;
+//       text-align: end;
+//     }
+//   }
+// }
+
+// .product__button {
+//   font-size: 16px;
+//   padding: 10px 0;
+//   line-height: 20px;
+  
+
+//   @include tablet {
+//     padding: 10px 92px;
+//     height: 40px;
+//   }
+
+//   @include desktop {
+//     padding: 10px 52px;
+//   }
+// }
+
+// .product__more {
+//   border: none;
+//   background: transparent;
+// }
+
+// .product__gift {
+  
+//   &::before {
+//     background-image: url("/img/gift-photo.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;  
+//     z-index: -2;
+//   }
+// }

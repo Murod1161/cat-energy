@@ -32,14 +32,26 @@
   justify-content: center;
   margin: 0;
   padding: 20px 75px;
-  align-items: center;
+  align-items: center;  
+  border-bottom: 1px solid #D9D9D9;
 
   @include tablet {
+    border: none;
     gap: 20px;
   }
 }
 
+.footer-socials__item {
+  transition: .3s;
+  
+  &:hover {
+    color: #68B738;
+  }
 
+  &:active {
+    opacity: 0.3;
+  }
+}
 
 .academy-logo {
   font-family: Arial;
@@ -47,9 +59,13 @@
   display: flex;
   justify-content: space-between;
   text-decoration: none;
-  border-top: 1px solid #D9D9D9;
   padding: 22px 0;
   transition: .3s;
+  color: #666;
+
+  &:hover svg {
+    color: #68B738;
+  }
 
   &:active {
     opacity: 0.3;
